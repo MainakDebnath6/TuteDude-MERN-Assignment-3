@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation System</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="errors" class="message-box" style="display: none;"></div>
+        <div id="success" class="message-box" style="display: none;"></div>
+
+        <div class="formElement">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email" placeholder="Enter your email">
+        </div>
+        
+        <div class="formElement">
+            <label for="phoneno">Phone-Number</label>
+            <input type="text" id="phoneno" name="phoneno" maxlength="10" placeholder="Enter phone number">
+        </div>
+
+        <div class="formElement password-container">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <span class="show-password" onclick="togglePassword()">👁️</span>
+        </div>
+
+        <div class="formElement password-container">
+            <label for="confirmpassword">Confirm-Password</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password">
+            <span class="show-password" onclick="togglePassword()">👁️</span>
+        </div>
+        
+        <input id="submitbutton" type="submit" value="Submit">
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
